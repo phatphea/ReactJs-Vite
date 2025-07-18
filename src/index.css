@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+/* Custom scrollbar hiding rules */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, Edge, Opera */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* For IE and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
