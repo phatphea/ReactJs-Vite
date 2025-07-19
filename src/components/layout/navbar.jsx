@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 
 export default function Navbar() {
   const menu = [
-    { title: "Products", path: "/all-products" },
+    { title: "Products", path: "/products" },
     { title: "About", path: "/about" },
     { title: "Careers", path: "/careers" },
     { title: "History", path: "/history" },
