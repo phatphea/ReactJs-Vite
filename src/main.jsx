@@ -9,6 +9,7 @@ import Login from "./pages/auth/Login.jsx";
 import NotFound from "./pages/pageNotFound/NotFound.jsx";
 import ProductDetail from "./pages/product/ProductDetail.jsx";
 import Product from "./pages/product/Product.jsx";
+import ReactLogin from "./pages/auth/ReactLogin.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -17,11 +18,11 @@ createRoot(document.getElementById("root")).render(
         <Route path="/" element={<MainLayout />}>
           <Route path="/" element={<App />} />
           <Route path="//products/category/:categorySlug" element={<App />} />
-          <Route path="/products" element={<Product/>} />
+          <Route path="/products" element={<Product />} />
           <Route path="/about" element={<About />} />
           <Route path="/products/:id" element={<ProductDetail />} />
         </Route>
-        <Route path="/login" element={<Login />}></Route>
+        <Route path="/login" element={<ReactLogin />}></Route>
         {/* handl page not found */}
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
